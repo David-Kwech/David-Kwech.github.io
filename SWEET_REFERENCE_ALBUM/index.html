@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SweetAlert2 - Información</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .swal2-html-container {
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+
+    <button onclick="mostrarInfo()">Premios</button>
+
+    <script>
+    function mostrarInfo(){
+    Swal.fire({
+        background: "lightblue",
+        html: `
+            <ul style="text-align: left; list-style-type: none; padding: 0; font-size: 14px;">
+                
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; font-size: 14px;">
+                    <div style="margin-left: 50px;"><b>PAREJA</b> (nombre):  <b>2</b></div>  
+                    <div><b style="margin-left: 10px;">TRIO</b> (nombre):  <b>5</b></div>
+                    <div style="margin-right: 10px;"><b>DOBLE PAREJA</b> (nombre):  <b>6</b></div>
+                </div>
+
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                    <img style="margin-left: 90px; width: 45px;" src="imagenes/Nombre.png">                       
+                    <img style="margin-right: 20px; width: 45px;" src="imagenes/Nombre.png">                       
+                    <img style="margin-right: 80px; width: 45px;" src="imagenes/Nombre.png">                       
+                </div>
+
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; font-size: 14px;">
+                    <div style="margin-left: 50px;"><b>CUARTETO</b> (nombre):  <b>10</b></div>  
+                    <div><b style="margin-left: 70px;">ESCALERA REFERENCIA (3)</b> (referencia):  <b>6</b></div>
+                    <div style="margin-right: 0px;"><b>ESCALERA REFERENCIA (4)</b> (referencia):  <b>8</b></div>
+                </div>
+
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                    <img style="margin-left: 90px; width: 45px;" src="imagenes/Nombre.png">                       
+                    <img style="margin-right: 20px; width: 45px;" src="imagenes/Referencia.png">                       
+                    <img style="margin-right: 80px; width: 45px;" src="imagenes/Referencia.png">                       
+                </div>
+
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; font-size: 14px;">
+                    <div style="margin-left: 50px;"><b>ESCALERA COLOR (3)</b> (nombre y referencia):  <b>10</b></div>  
+                    <div><b>ESCALERA COLOR (4)</b> (nombre y referencia):  <b>15</b></div>
+                    <div style="margin-right: 0px;"><b>ESCALERA IMPERIAL</b> (referencia 1): <b>+1/3 del valor</b></div>
+                </div>
+
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                    <div style="margin-left: 70px;"><img style="width: 45px" src="imagenes/Nombre.png"><img style="width: 45px" src="imagenes/Referencia.png"></div>                    
+                    <div style="margin-left: -40px;"><img style="width: 45px" src="imagenes/Nombre.png"><img style="width: 45px" src="imagenes/Referencia.png"></div>                 
+                    <img style="margin-right: 80px; width: 45px;" src="imagenes/Referencia.png">                       
+                </div>
+                
+                <div style="display: flex; justify-content: space-between; align-items: center; font-size: 14px;">
+                    <div style="margin-left: 50px;"><b>ESCALERA ESTRELLAS (3)</b> (estrellas):  <b>15</b></div>  
+                    <div><b>ESCALERA ESTRELLAS (4)</b> (estrellas):  <b>20</b></div>
+                </div>
+
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                    <img style="margin-left: 90px; width: 45px;" src="imagenes/Estrella.png">                                             
+                    <img style="margin-right: 80px; width: 45px;" src="imagenes/Estrella.png">                       
+                </div>
+            </ul>
+        `,
+        icon: "info",
+        confirmButtonText: "<",
+        width: "1200px",
+        draggable: true,
+    });
+}
+
+
+    </script>
+
+
+
+</body>
+</html>
+

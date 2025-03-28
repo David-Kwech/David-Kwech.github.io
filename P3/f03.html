@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="utilidades1.js"></script>
+    <script>
+        function cargarDatos() 
+        {
+            setValue("sResulNombre",getValue("sNombre"),);
+            setValue("sResulApellido",getValue("sApellido"),);
+            setValue("sResulTelefono",getValue("sTelefono"),);
+        }
+    </script>
+</head>
+<body onload="cargarDatos()">
+    <form>
+
+        <div>El nombre que ha viajado es:
+            <input type="text" name="sResulNombre"/>
+        </div>
+        <div>El apellido que ha viajado es:
+            <input type="text" name="sResulApellido"/>
+        </div>
+        <div>El telefono que ha viajado es:
+            <input type="number" name="sResulTelefono"/>
+        </div>
+
+    </form>
+
+</body>
+</html>

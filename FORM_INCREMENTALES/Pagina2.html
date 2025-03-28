@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pagina 2</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script type="text/javascript" src="utilidades1.js"></script>
+    <script>
+    function cargarDatos() {
+        setValue('sNombre', getValue('Nombre'));
+        setValue('sPassword', getValue('Password'));
+        setValue('sContador1', parseInt( getValue('Contador1')) + 1 );
+    }
+    </script>
+    <style>
+        body {
+            background-image: url("Imagenes/fondo.png");           
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white; 
+        }
+    </style>
+</head>
+
+<body onload="cargarDatos()">
+    <div style="text-align: center;">
+        <h1 style="color: black;">Pagina 2</h1>
+    </div>
+
+    <form action="Pagina3.html" method="get" style="text-align: center;">
+
+        <div>
+            <p style="color: black; font-size: large;">El nombre que ha viajado es:</p>
+            <input type="text" name="sNombre" readonly/>
+        </div>
+        <div>
+            <p style="color: black; font-size: large;">La password que ha viajado es:</p>
+            <input type="password" name="sPassword" readonly/>
+        </div>
+        <div>
+            <p style="color: black; font-size: large;">Nº lista:</p>
+                <input type="number" name="num">
+        </div>
+        <div>
+            <p style="color: black; font-size: large;">Día:</p>
+                <input type="date" name="dia">
+        </div>
+        <div>
+            <p style="color: black; font-size: large;">Contador +1:</p>
+                <input type="number" name="sContador1" readonly>
+        </div>
+        <div>
+            <p style="color: black; font-size: large;">Contador +2:</p>
+                <input type="number" name="Contador2">
+        </div>
+
+        <br>
+        
+            <div style="text-align: center;">
+                <input type="submit" value="Dame!!!">
+            </div>
+        </form>
+
+    </form>
+</body>
+</html>

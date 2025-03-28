@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pagina 4</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script type="text/javascript" src="utilidades1.js"></script>
+    <script>
+    function cargarDatos() {
+        setValue('sssNombre', getValue('ssNombre'));
+        setValue('sssPassword', getValue('ssPassword'));
+        setValue("SSnum", getValue("Snum"));
+        setValue("SSdia", getValue("Sdia"));
+        setValue('sssContador1', parseInt( getValue('ssContador1')) + 1 );
+        setValue('ssContador2', parseInt( getValue('sContador2')) + 2 );
+        setValue('sCumpleaños', getValue('Cumpleaños'));
+        setValue('sEmail', getValue('Email'));
+        setValue('MesM', getValue('Mes'));
+        setValue('sRango', getValue('Rango'));
+    }
+    </script>
+    <style>
+        body {
+            background-image: url("Imagenes/fondo.png");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+        }
+    </style>
+</head>
+<body onload="cargarDatos()">
+    <div style="text-align: center;">
+        <h1 style="color: black;">Pagina 4</h1>
+    </div>
+
+    <form action="Pagina1.html" method="get" style="text-align: center;">
+        <div>
+            <p style="color: black; font-size: large;">El nombre que ha viajado es:</p>
+            <input type="text" name="sssNombre" readonly/>
+        </div>
+        <div>
+            <p style="color: black; font-size: large;">La password que ha viajado es:</p>
+            <input type="password" name="sssPassword" readonly/>
+        </div>
+        <div>
+            <p style="color: black; font-size: large;">Nº lista:</p>
+                <input type="number" name="SSnum" readonly>
+        </div>
+        <div>
+            <p style="color: black; font-size: large;">Día:</p>
+                <input type="date" name="SSdia" readonly>
+        </div>
+        <div>
+            <p style="color: black; font-size: large;">Contador +1:</p>
+                <input type="number" name="sssContador1" readonly>
+        </div>
+        <div>
+            <p style="color: black; font-size: large;">Contador +2:</p>
+                <input type="number" name="ssContador2" readonly>
+        </div>
+        <div>
+            <p style="color: black; font-size: large;">Fecha de cumpleaños:</p>
+                <input type="date" name="sCumpleaños" readonly>
+        </div>
+        <div>
+            <p style="color: black; font-size: large;">Email:</p>
+                <input type="email" name="sEmail" readonly>
+        </div>
+        <div>
+            <p style="color: black; font-size: large;">Mes actual:</p>
+                <input type="text" name="MesM" readonly>
+        </div>
+        <div>
+            <p style="color: black; font-size: large;">Rango:</p>
+                <input type="range" name="sRango" disabled>
+        </div>
+
+        <br>
+        <div style="text-align: center;">
+            <input type="submit" value="Dame!!!">
+        </div>
+    </form>
+    
+
+</body>
+</html>

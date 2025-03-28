@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Resultados</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script type="text/javascript" src="utilidades1.js"></script>
+    <script>
+    function cargarDatos() {
+        setValue('sResulNombre', getValue('sNombre'));
+        setValue('sResulApellido', getValue('sApellido'));
+        setValue('sNombre', getValue('sNombre'));
+        setValue('sApellido', getValue('sApellido'));
+    }
+    </script> 
+</head>
+<body onload="cargarDatos()">
+    <div>
+        <p>El nombre que ha viajado es:</p>
+        <input type="text" name="sResulNombre" id="sResulNombre" readonly/>
+    </div>
+    <div>
+        <p>El apellido que ha viajado es:</p>
+        <input type="text" name="sResulApellido" id="sResulApellido" readonly/>
+    </div>
+    <div>
+        <form action="f03.html" method="GET">
+            <input type="hidden" name="sNombre" id="sNombre" />
+            <input type="hidden" name="sApellido" id="sApellido" />
+            <label>Teléfono: </label>
+            <input type="text" name="sTelefono" required>
+            <input type="submit" value="Dame!!!">
+        </form>
+    </div>
+</body>
+</html>

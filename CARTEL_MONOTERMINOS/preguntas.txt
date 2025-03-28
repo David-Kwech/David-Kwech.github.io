@@ -1,0 +1,9 @@
+1.¿Cual es el código mas utilizado en el mundo? JavaScript
+
+2.¿En que parte del codigo se edita el encabezado de la pagina? head
+
+3.¿A que codigo hace referencia el nombre: Hypertext Markup Language? HTML
+
+4.¿Que signo de puntuacion se utiliza para indicar el final de una etiqueta? >
+
+5.¿Color predefinido de las etiquetas de CSS en HTML? Amarillo

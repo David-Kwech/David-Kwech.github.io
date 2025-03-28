@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwech's Night Club</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image-x-icon" href="Imágenes/tiburon.png">
+    <style>
+      @font-face {
+          font-family: "fuente2";
+          src: url(Fuentes/Decola-Regular.ttf);
+          font-weight: normal;
+          font-style: normal;
+      }
+  </style>
+</head>
+
+<body style="background-color: black;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container">
+            <a href="index.html"><img width="100" src="Imágenes/logo.jpg"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="eventos.html">Eventos</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="reservas.html">Reservas</a></li>
+                    <li class="nav-item nav-pills nav-info"><a class="nav-link active" href="precios.html">Precios</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container bg-black text-white col-sm-8" style="width:1000px">
+      <h1 style="font-family: fuente2;" class="text-white text-center">Precios</h1>
+        <h3 class="text-white">Entradas</h3>
+        <p style="color: white;">Se compran en taquilla</p>
+        <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-primary">
+              Entrada estandar
+              <span class="badge bg-primary ">12 €</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-primary">
+              Entrada + 1 consumicion
+              <span class="badge bg-primary">15 €</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-primary">
+              Entrada + 2 consumiciones
+              <span class="badge bg-primary">20 €</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-primary">
+              Entrada VIP
+              <span class="badge bg-primary">35 €</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container py-5" style="width:1000px">
+        <h3 class="text-white">Consumiciones con alcohol (+18)</h3>
+        <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-primary">
+              Cubata: ron-cola, ron con limon, whisky-cola, etc.
+              <span class="badge bg-primary ">12 €</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-primary">
+              Cocteles: daiquiri, martini, margarita, mojito, etc.
+              <span class="badge bg-primary">8.50 €</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-primary">
+              Ron solo
+              <span class="badge bg-primary">9 €</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-primary">
+              Whisky solo
+              <span class="badge bg-primary">9 €</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-primary">
+              Ginebra sola
+              <span class="badge bg-primary">8 €</span>
+            </li>
+        </ul>
+    </div>    
+
+    <div class="container py-5" style="width:1000px">
+        <h3 class="text-white">Consumiciones sin alcohol</h3>
+        <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-primary">
+                  Refrescos: coca-cola, fanta, sprite, etc.
+                  <span class="badge bg-primary ">3 €</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-primary">
+                  Zumos: piña, naraja, etc. 
+                  <span class="badge bg-primary">4.50 €</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-primary">
+                  Agua
+                  <span class="badge bg-primary">2 €</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-primary">
+                  Cocteles sin alcohol.
+                  <span class="badge bg-primary">6.50 €</span>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
