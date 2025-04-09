@@ -1,0 +1,36 @@
+* {
+    color: blue;
+  text-align: center;
+}
+
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: red;
+  text-align: center;
+}
+
+p {
+  font-family: monospace;
+  font-size: 60px;
+}
+
+.grandegrande {
+    font-family: monospace;
+    font-size: 60px;
+}
+
+.medianamediana {
+    font-family: monospace;
+    font-size: 30px;
+}
+
+.colorcolor {
+    color: red;
+}
+
+#choco {
+    color: rgb(18, 238, 58);
+}
