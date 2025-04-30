@@ -3,9 +3,10 @@ body {
     background-image: url('imagenes/cafe.png');
     background-size: cover;
     display: flex;
-    justify-content: center;
+    place-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    margin: 10px;
   }
 
   .menu {
@@ -14,30 +15,22 @@ body {
     padding: 20px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
     text-align: center;
-    justify-content: center;
-    align-items: center;
   }
+  
 
   h1 {
-    font-family: Arial, sans-serif;
-    justify-content: center;
-    align-items: center;
+    font-family: Arial, Helvetica, sans-serif, monospace;
     font-size: 38px;
   }
 
   h2 {
-    margin-top: 30px;
-    padding-top: 10px;
-    justify-content: center;
-    align-items: center;
+    font-family: Arial, Helvetica, sans-serif, monospace;
     font-size: 30px;
   }
 
   .line {
-    border-top: 5px solid brown;
-    margin: 10px 0;
-    justify-content: center;
-    align-items: center;
+    border-block-start: 5px solid brown;
+    margin: 10px;
   }
 
   ul {
@@ -48,6 +41,7 @@ body {
   }
 
   li {
+    font-family: Arial, Helvetica, sans-serif, monospace, bold;
     display: flex;
     justify-content: space-between;
     padding: 5px 0;
@@ -56,7 +50,7 @@ body {
   .footer {
     font-size: 0.8em;
     margin-top: 20px;
-    color: #a89a6e;
+    color: black;
     justify-content: center;
     align-items: center;
   }
@@ -71,7 +65,14 @@ body {
     justify-content: center;
     align-items: center;
   }
+  a:focus {
+    color: white;
+  }
 
-  img{
-    width: 50px;
+  .img{
+    width: 60px;
+  }
+
+  .img2{
+    width: 55px;
   }
