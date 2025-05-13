@@ -20,22 +20,25 @@
         margin: 10px;
     }
 
-    .fondo {
-        background-color: white;
+    .cromo {
+        background-color: cyan;
         width: 400px;
         height: 560px;
         padding: 20px;
+        
         text-align: center;
-        border: 10px;
+        border: 15px solid;
         border-radius: 10px;
-        border-color: red;
+        border-color: grey;
     }
+
     .nombre_carta{
         width: 200px;
         height: 40px;
         background-color: black;
         display: block;
         margin: auto auto;
+        border-radius: 10px;
 
 
         text-align: center;
@@ -55,14 +58,15 @@
         height: 40px;
         background-color: black;
         display: block;
-        margin-right: 10px;
+        margin-right: -5px;
         margin-left: -25px;
+        border-radius: 5px;
         
 
         text-align: center;
-        font-size: 30px;
+        font-size: 25px;
         color: white;
-        
+        padding-top: 4px;
     }
 
     .referencia2{
@@ -70,14 +74,84 @@
         height: 40px;
         background-color: black;
         display: block;
-        margin-left: 305px;
+        margin-left: 290px;
         margin-top: -15px;
+        border-radius: 5px;
+
 
         text-align: center;
         font-size: 15px;
         color: white;
-        padding-top: 5px;
+        padding-top: 10px;
     }
+
+    .atributo{
+        width: 150px;
+        height: 35px;
+        background-color: black;
+        display: block;
+        border-radius: 10px;
+
+
+        text-align: left;
+        font-size: 15px;
+        color: white;
+        padding-top: 7px;
+        padding-left: 15px;
+    }
+
+    .fuerza{
+        width: 40px;
+        height: 35px;
+        background-color: black;
+        display: block;
+        margin-left: 160px;
+        margin-top: -35px;
+        border-radius: 10px;
+
+
+        text-align: center;
+        font-size: 15px;
+        color: white;
+        padding-top: 7px;
+    }
+
+    .descripcion{
+        width: 330px;
+        height: 90px;
+        background-color: black;
+        display: block;
+        margin-top: 20px;
+        border-radius: 10px;
+
+
+        text-align: left;
+        font-size: 12px;
+        color: white;
+        padding-top: 5px;
+        padding-left: 10px;
+    }
+
+    .imagen{
+        width: 330px;
+        height: 200px;
+        background-color: black;
+        background-position: center;
+        background-size: cover;
+        display: block;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+
+    .estrellas{
+        width: 330px;
+        height: 40px;
+        
+
+        text-align: center;
+        font-size: 40px;
+    }
+    
 
     
 
@@ -87,7 +161,7 @@
 
 <body>
     
-    <div class="fondo">
+    <div class="cromo">
 
         <div class="cabecera">
             <div class="nombre_carta">SANCHA</div> 
@@ -96,6 +170,16 @@
 
         <div class="referencia2">/18</div>
         
+        <div>
+            <div class="atributo">sanchismo</div>
+            <div class="fuerza">+ 2</div>
+        </div>
+
+        <div class="descripcion">Es un sanchista madridista y machista.</div>
+
+        <div class="imagen" style="background-image: url(imagenes/imagen.jpg);"></div>
+
+        <div class="estrellas"> * * * * *</div>
     </div>
 
 </body>
